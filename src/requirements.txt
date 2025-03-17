@@ -1,0 +1,7 @@
+flask
+phe
+bcrypt
+rsa
+cryptography
+pytest
+bandit
