@@ -53,7 +53,7 @@ FLASK_PID=$!
 # Wait for Flask app to start (max 10 seconds)
 echo "Waiting for Flask app to start..."
 for i in {1..10}; do
-  if curl -k https://localhost:5000/ &>/dev/null; then
+  if curl -k http://localhost:5000/ &>/dev/null; then
     echo "Flask app is up!"
     break
   fi
@@ -62,7 +62,7 @@ for i in {1..10}; do
 done
 
 # If still not up, exit
-if ! curl -k https://localhost:5000/ &>/dev/null; then
+if ! curl -k http://localhost:5000/ &>/dev/null; then
   echo "Flask app failed to start. Exiting."
   kill $FLASK_PID
   exit 1
@@ -70,40 +70,43 @@ fi
 
 # Register users
 echo "Registering users..."
-curl -X POST https://localhost:5000/register \
+curl -X POST http://localhost:5000/register \
   -H "Content-Type: application/json" \
   -d '{"username": "voter1", "password": "securepass", "role": "voter"}' -k
 
-curl -X POST https://localhost:5000/register \
+curl -X POST http://localhost:5000/register \
   -H "Content-Type: application/json" \
   -d '{"username": "candidate1", "password": "securepass", "role": "candidate"}' -k
 
-curl -X POST https://localhost:5000/register \
+curl -X POST http://localhost:5000/register \
   -H "Content-Type: application/json" \
   -d '{"username": "admin1", "password": "adminpass", "role": "admin"}' -k
 
 # Voter login
 echo "Logging in voter1..."
-curl -X POST https://localhost:5000/login \
+curl -X POST http://localhost:5000/login \
   -H "Content-Type: application/json" \
   -d '{"username": "voter1", "password": "securepass"}' -k
 
 # Cast a vote
 echo "Casting vote for voter1..."
-VOTE_RESPONSE=$(curl -X POST https://localhost:5000/vote \
+VOTE_RESPONSE=$(curl -X POST http://localhost:5000/vote \
   -H "Content-Type: application/json" \
   -d '{"username": "voter1", "vote": 1}' -k)
 echo "Vote response: $VOTE_RESPONSE"
 
 # View encrypted votes
 echo "Fetching encrypted votes..."
-curl -X GET https://localhost:5000/votes -k
+curl -X GET http://localhost:5000/votes -k
+
+echo "Extracted Token: $TOKEN"
 
 # Admin tallies the votes
 echo "Admin tallying the votes..."
-TALLY_RESPONSE=$(curl -X POST https://localhost:5000/tally \
+TALLY_RESPONSE=$(curl -X POST http://localhost:5000/tally \
   -H "Content-Type: application/json" \
-  -d '{"username": "admin1"}' -k)
+  -H "Authorization: Bearer $TOKEN" \
+  -d '{}' -k)
 echo "Tally response: $TALLY_RESPONSE"
 
 # Kill Flask server

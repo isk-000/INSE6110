@@ -1,0 +1,1 @@
+curl -s http://localhost:5000/all_voters_voted

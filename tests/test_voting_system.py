@@ -21,8 +21,19 @@ class TestVotingSystem(unittest.TestCase):
 
     def test_vote_signing(self):
         vote = 1
-        signature = sign_vote(vote)
+        voter = "alice"
+        signature = sign_vote(vote, voter)
         self.assertIsInstance(signature, bytes)
+
+    def test_hmac_generation_and_verification(self):
+        voter = "alice"
+        candidate = "bob"
+        nonce = "random_nonce_123"
+        message = f"{voter}:{candidate}:{nonce}"
+        mac = generate_hmac(message, candidate, nonce)
+
+        self.assertTrue(verify_hmac(message, candidate, nonce, mac))
+        self.assertFalse(verify_hmac("tampered_vote", candidate, nonce, mac))
 
     def test_aes_encryption(self):
         data = {"vote": 1, "signature": "abc123"}
@@ -30,11 +41,11 @@ class TestVotingSystem(unittest.TestCase):
         decrypted = decrypt_data(encrypted)
         self.assertEqual(data, decrypted)
 
-    def test_hmac_generation_and_verification(self):
-        message = "encrypted_vote"
-        mac = generate_hmac(message)
-        self.assertTrue(verify_hmac(message, mac))
-        self.assertFalse(verify_hmac("tampered_vote", mac))
+    # def test_hmac_generation_and_verification(self):
+    #     message = "encrypted_vote"
+    #     mac = generate_hmac(message)
+    #     self.assertTrue(verify_hmac(message, mac))
+    #     self.assertFalse(verify_hmac("tampered_vote", mac))
 
     def test_homomorphic_encryption(self):
         vote1 = public_key.encrypt(1)

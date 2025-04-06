@@ -1,0 +1,201 @@
+ * Serving Flask app 'inse6110_voting_system'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [05/Apr/2025 19:36:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:36:39] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:36:41] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [05/Apr/2025 19:36:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:36:59] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:37:01] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [05/Apr/2025 19:37:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:37:21] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:38:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:38:10] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2025 19:38:13] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:29:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:29:16] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:29:20] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:29:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:29:34] "POST /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzODk2NDk5Ljg3NTEzMzN9.CEmzvmNEWTBhFSAZrpyC1sSL88JBhNimoinVD1WaX3U
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzODk2NTE5LjI3OTc5NH0.T3wzPm-_NOMCVAx0gEo8VFrciNID5jNTFQQFHvjgu8Q
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzODk2NTQxLjIyMTYwNTV9.gO0x8iiBGAGBWlz_P4HSNhklz-Xhz6dhmL8Tv0KWUgo
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzODk2NTkwLjQxNDYzMDd9.UFe5EsTzzWOauTvEAgzKVwpxabotVHTY9yUYqdQG_X4
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzOTE0MDU2LjI5NDgxMzR9.0qEby6QmbrRHyzEzNp_dzhJd6o5qs-n-UIdWP9Yeiqs
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzOTE0MDc0LjY4MzU3NjZ9.3fBbZQtaUd2VcYPVtoehhzIEhnfV9HK0DMWmNJ0A6ks
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [06/Apr/2025 00:30:14] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:30:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:30:52] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:30:55] "GET /live_results HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:31:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:31:21] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [06/Apr/2025 00:31:39] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:31:59] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:32:05] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:32:09] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:32:13] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:32:14] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:32:14] "GET /live_results HTTP/1.1" 400 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzOTE0MTUyLjMzMDQ3ODJ9.fQpxZN-Dpai9IIufp_oAMm20P6IdbKsUZrFNagFte1M
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5ldyIsInJvbGUiOiJ2b3RlciIsImV4cCI6MTc0MzkxNDIyNS45MDM5NjUyfQ.x9ZTAzRjm4N96-cGMjWarMOOF73m8pofLNlfr3MDoc8
+hi
+decoded:  {'username': 'new', 'role': 'voter', 'exp': 1743914225.9039652}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [06/Apr/2025 00:36:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:05] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:07] "GET /live_results HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:31] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:38] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:44] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:47] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:52] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:36:52] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:22] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:26] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:31] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:31] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:41] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:43] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:48] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:48] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:37:49] "GET /live_results HTTP/1.1" 401 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzOTE0NDY1Ljk0MzQ1NDN9.Vlkgut2lqI8nTMpcFlaXcZ6iUIqHgn7FB2VpUm2vDyM
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxvbCIsInJvbGUiOiJ2b3RlciIsImV4cCI6MTc0MzkxNDUwNC40MTYxOTY4fQ.bxKssjAX9H_gvYSkLB2OWjwi9GAvMhwSOj6NN45ICUY
+hi
+decoded:  {'username': 'lol', 'role': 'voter', 'exp': 1743914504.4161968}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV5Iiwicm9sZSI6InZvdGVyIiwiZXhwIjoxNzQzOTE0NTQyLjAwNDA4fQ.HHRVvwGMJzcvhzGZp5AXgvsJwWLS8MGwizWwbtPdetI
+hi
+decoded:  {'username': 'ey', 'role': 'voter', 'exp': 1743914542.00408}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxvbCIsInJvbGUiOiJ2b3RlciIsImV4cCI6MTc0MzkxNDU2MS44NjkyNDh9.Zkg2PSUATgxN91dtp6CE7Pl3vfSasjGA85HIm0ytwSo
+hi
+decoded:  {'username': 'lol', 'role': 'voter', 'exp': 1743914561.869248}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [06/Apr/2025 00:41:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:41:57] "POST /register HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:42:08] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:42:12] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:42:15] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:42:18] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:42:18] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:42:19] "GET /live_results HTTP/1.1" 401 -
+127.0.0.1 - - [06/Apr/2025 00:43:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:11] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:16] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [06/Apr/2025 00:43:20] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:24] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:29] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:29] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:29] "GET /live_results HTTP/1.1" 403 -
+127.0.0.1 - - [06/Apr/2025 00:43:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:52] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:56] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:43:58] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:44:01] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:44:02] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:44:02] "GET /votes HTTP/1.1" 400 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZuIiwicm9sZSI6InZvdGVyIiwiZXhwIjoxNzQzOTE0ODMyLjYzNjUyOTR9.r8B8n_GITLriiOqWS7dZeFQ6eYPKNEIixhYUuLJxMw4
+hi
+decoded:  {'username': 'vn', 'role': 'voter', 'exp': 1743914832.6365294}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxtIiwicm9sZSI6InZvdGVyIiwiZXhwIjoxNzQzOTE0OTAwLjEzOTI0NTd9.XMpuqQieTff2E8Mu7gGeWonmW_ayObmJHzy5HYwQ2Sw
+hi
+decoded:  {'username': 'lm', 'role': 'voter', 'exp': 1743914900.1392457}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImYiLCJyb2xlIjoidm90ZXIiLCJleHAiOjE3NDM5MTQ5MzYuNTUxMTQyfQ.ml5dBT6nYeZUUofw9y5tVpcMThBXgb2F-2xOE5PyXeA
+hi
+decoded:  {'username': 'f', 'role': 'voter', 'exp': 1743914936.551142}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [06/Apr/2025 00:45:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:39] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:42] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:44] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:48] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:48] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:45:48] "GET /votes HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:47:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:47:40] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:47:48] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:47:50] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:47:57] "POST /vote HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:47:58] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:48:01] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:48:05] "POST /vote HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:48:06] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:48:24] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [06/Apr/2025 00:48:29] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:48:30] "GET /live_results HTTP/1.1" 403 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImEiLCJyb2xlIjoidm90ZXIiLCJleHAiOjE3NDM5MTUwNDIuNDk0MDQ1N30.Uqdd-NH1nN1rdzV3f-z1YDTa1fdFPwX6lMZGOBHonzI
+hi
+decoded:  {'username': 'a', 'role': 'voter', 'exp': 1743915042.4940457}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InMiLCJyb2xlIjoidm90ZXIiLCJleHAiOjE3NDM5MTUxNjguMTE4OTI4fQ.Ihfl7kJA8FFy_IRJEVXTsYiXNwMhXGb1d7pFu9JjDjo
+hi
+decoded:  {'username': 's', 'role': 'voter', 'exp': 1743915168.118928}
+hi
+decoded:  {'username': 's', 'role': 'voter', 'exp': 1743915168.118928}
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InMiLCJyb2xlIjoidm90ZXIiLCJleHAiOjE3NDM5MTUyMDkuMTM5OTUyfQ.jtwLgEqB_qDlI2jx1-XcH_mjqerArnQoJNG6Hj5y3QM
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217
+127.0.0.1 - - [06/Apr/2025 00:52:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:02] "POST /register HTTP/1.1" 400 -
+127.0.0.1 - - [06/Apr/2025 00:53:11] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:12] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:18] "POST /vote HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2025 00:53:18] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:31] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:34] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:36] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:53:39] "POST /vote HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2025 00:53:39] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:22] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:24] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:31] "POST /vote HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2025 00:54:31] "GET /all_voters_voted HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:48] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:50] "GET /candidates HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2025 00:54:54] "POST /vote HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2025 00:54:55] "GET /all_voters_voted HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\osama\\Desktop\\secure-voting-system\\src\\inse6110_voting_system.py', reloading
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhbmRpZGF0ZTEiLCJyb2xlIjoiY2FuZGlkYXRlIiwiZXhwIjoxNzQzOTE1NDkxLjA4MjU5NzV9.t48_WBynGPahIAirzAPtZnDLZJh0Po1CCt_7eD2jIHg
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImciLCJyb2xlIjoidm90ZXIiLCJleHAiOjE3NDM5MTU1MTQuODY2ODAwOH0.RDQq83wYAxy2gOSs7hAURqThcQ1UnXKWjrD0pSq9gkE
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhbmRpZGF0ZTEiLCJyb2xlIjoiY2FuZGlkYXRlIiwiZXhwIjoxNzQzOTE1NTYyLjAyMjI0MzN9.1X7nvLPnXnAmqdamRCYDRRju4uJm75xV6yNvfxXk5xw
+login token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhbmRpZGF0ZTEiLCJyb2xlIjoiY2FuZGlkYXRlIiwiZXhwIjoxNzQzOTE1NTg4LjM1MTkzOH0.Ba0RjI2k6ETErM2MGdU9MtsxA20df3EJpNHEfbcfUs4
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 706-599-217

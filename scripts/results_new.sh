@@ -1,0 +1,1 @@
+curl -s -X GET http://localhost:5000/results_new
