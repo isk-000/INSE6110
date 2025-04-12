@@ -89,7 +89,7 @@ def jwt_tampering_attack(token):
 
 def expired_token_attack(token, username, candidate):
     print("\n--- Expired Token Attack ---")
-    time.sleep(10)  # Simulate token expiration (ensure system expiry time matches test delay)
+    time.sleep(3)  # Simulate token expiration (ensure system expiry time matches test delay)
     response = requests.post(f'{BASE_URL}/vote', json={'token': token, 'username': username, 'candidate': candidate}, verify=False)
     success = 'Invalid or expired token' in response.text
     log_result('Expired Token Attack', success, response)
@@ -97,15 +97,15 @@ def expired_token_attack(token, username, candidate):
 def test_security():
     print("\nRunning Security Tests...")
     open(LOG_FILE, 'w').close()  # Clear previous log
-    register_user('admin4', 'adminpass', 'admin')
-    register_user('voter7', 'voterpass', 'voter')
-    register_user('candidate2', 'candipass', 'candidate')
+    # register_user('admin4', 'adminpass', 'admin')
+    # register_user('voter7', 'voterpass', 'voter')
+    # register_user('candidate2', 'candipass', 'candidate')
 
-    token = login_user('voter7', 'voterpass')
+    token = login_user('v2', 'v2')
     if token:
-        double_vote_attack(token, 'voter7', 'candidate1')
-        replay_attack(token, 'voter7', 'candidate1')
-        expired_token_attack(token, 'voter7', 'candidate1')
+        double_vote_attack(token, 'v2', 'c1')
+        replay_attack(token, 'v2', 'c1')
+        expired_token_attack(token, 'v2', 'c1')
     
     sql_injection_attack()
     unauthorized_vote()

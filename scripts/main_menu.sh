@@ -29,8 +29,8 @@ watch_results() {
     if [ "$all_voted" == "true" ]; then
       echo
       echo "==================================="
-      echo "      ✅ All voters have voted!"
-      echo "      📊 Final Voting Results"
+      echo "      All voters have voted!"
+      echo "      Final Voting Results"
       echo "==================================="
       curl -s -X GET http://localhost:5000/results_new
       echo
@@ -59,10 +59,30 @@ logout() {
   echo "You have been logged out."
 }
 
+# Check if the admin is registered in the database
+check_admin() {
+  admin_check=$(curl -s http://localhost:5000/check_admin)
+  if [ "$admin_check" == "true" ]; then
+    return 0  # Admin exists
+  else
+    return 1  # Admin does not exist
+  fi
+}
+
 # Main menu
 while true; do
   watch_results &
   clear
+  
+  if ! check_admin; then
+    echo "Admin not found, registering admin..."
+    curl -X POST http://localhost:5000/register \
+      -H "Content-Type: application/json" \
+      -d "{\"username\": \"admin\", \"password\": \"admin\", \"role\": \"admin\"}" -k
+  else
+    echo "Admin already exists, skipping registration."
+  fi
+
   echo "==================================="
   echo "      Secure Voting System       "
   echo "==================================="
@@ -122,23 +142,23 @@ while true; do
           -d "{\"token\": \"$TOKEN\", \"username\": \"$username\", \"candidate\": \"$candidate\"}" -k)
 
         echo "$vote_response"
+      
+      #   # Check if all voters have now voted
+      #   check=$(curl -s http://localhost:5000/all_voters_voted)
+      #   all_voted=$(echo $check | grep -Po '"all_voted":\s*\K(true|false)')
 
-        # Check if all voters have now voted
-        check=$(curl -s http://localhost:5000/all_voters_voted)
-        all_voted=$(echo $check | grep -Po '"all_voted":\s*\K(true|false)')
-
-        if [ "$all_voted" = "true" ]; then
-          echo
-          echo "==================================="
-          echo "   All voters have voted! Showing results:"
-          echo "==================================="
-          curl -X GET http://localhost:5000/votes \
-          -H "Authorization: Bearer $TOKEN" \
-          -H "Content-Type: application/json" -k
-          echo
-          read -p "Press Enter to end session..." temp
-          exit 0
-        fi
+      #   if [ "$all_voted" = "true" ]; then
+      #     echo
+      #     echo "==================================="
+      #     echo "   All voters have voted! Showing results:"
+      #     echo "==================================="
+      #     curl -X GET http://localhost:5000/votes \
+      #     -H "Authorization: Bearer $TOKEN" \
+      #     -H "Content-Type: application/json" -k
+      #     echo
+      #     read -p "Press Enter to end session..." temp
+      #     exit 0
+      #   fi
       fi
       ;;
     4)
@@ -149,8 +169,8 @@ while true; do
           -H "Authorization: Bearer $TOKEN" \
           -H "Content-Type: application/json" -k
         echo
-        read -p "Press Enter to end session..." temp
-        exit 0
+        # read -p "Press Enter to end session..." temp
+        # exit 0
       fi
       ;;
     5)
