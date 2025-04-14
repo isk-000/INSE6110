@@ -5,8 +5,8 @@ import time
 import secrets
 import jwt as pyjwt
 from flask import Flask, request, jsonify
-import requests
-from phe import paillier
+# import requests
+# from phe import paillier
 import bcrypt
 import rsa
 import hashlib
@@ -27,9 +27,6 @@ hmac_key = os.urandom(32)
 
 # BASE_URL = 'http://localhost:5000'
 
-# Generate Paillier key pair for homomorphic encryption
-public_key, private_key = paillier.generate_paillier_keypair()
-
 # RSA keys for digital signatures
 rsa_public_key, rsa_private_key = rsa.newkeys(512)
 
@@ -39,10 +36,6 @@ cipher = Fernet(aes_key)
 
 # SQLite database setup
 db_path = 'database/voting_system.db'
-
-# # Delete the database file to simulate a new voting session.
-# if os.path.exists(db_path):
-#     os.remove(db_path)
 
 conn = sqlite3.connect(db_path, check_same_thread=False)
 c = conn.cursor()
@@ -217,14 +210,14 @@ def vote():
         except:
             continue
 
-    encrypted_vote = public_key.encrypt(1)
+    encrypted_vote = encrypt_data(1)
     signature = sign_vote(1, username)
     mac = generate_hmac(username, candidate, nonce)
 
     full_vote_data = {
         'voter': username,
         'candidate': candidate,
-        'vote': str(encrypted_vote.ciphertext()),
+        'vote': str(encrypted_vote),
         'nonce': nonce,
         'timestamp': timestamp,
         'signature': signature.hex(),
@@ -242,6 +235,7 @@ def vote():
     conn.commit()
 
     return jsonify({'message': f'Vote cast successfully by {username} for {candidate}'})
+
 
 @app.route('/votes', methods=['GET'])
 def get_votes():
@@ -266,27 +260,29 @@ def get_votes():
 
     return jsonify({'live_results': tally})
 
-@app.route('/tally', methods=['POST'])
-def tally_votes():
-    token = request.headers.get('Authorization')
-    if token:
-        token = token.replace("Bearer ", "")
-    
-    decoded = verify_jwt(token)
-    if not decoded or decoded['role'] != 'admin':
-        return jsonify({'error': 'Unauthorized'}), 403
-    
-    c.execute('SELECT encrypted_vote FROM votes')
-    encrypted_votes = [int(row[0]) for row in c.fetchall()]
-    
-    encrypted_tally = encrypted_votes[0]
-    for enc_vote in encrypted_votes[1:]:
-        encrypted_tally += enc_vote
+# For Future Work where we can integrate Paillier Encryption Algorithm
 
-    # Decrypt once at the end
-    decrypted_tally = private_key.decrypt(encrypted_tally)
+# @app.route('/tally', methods=['POST'])
+# def tally_votes():
+#     token = request.headers.get('Authorization')
+#     if token:
+#         token = token.replace("Bearer ", "")
+    
+#     decoded = verify_jwt(token)
+#     if not decoded or decoded['role'] != 'admin':
+#         return jsonify({'error': 'Unauthorized'}), 403
+    
+#     c.execute('SELECT encrypted_vote FROM votes')
+#     encrypted_votes = [int(row[0]) for row in c.fetchall()]
+    
+#     encrypted_tally = encrypted_votes[0]
+#     for enc_vote in encrypted_votes[1:]:
+#         encrypted_tally += enc_vote
 
-    return jsonify({'tally': decrypted_tally})
+#     # Decrypt once at the end
+#     decrypted_tally = private_key.decrypt(encrypted_tally)
+
+#     return jsonify({'tally': decrypted_tally})
 
 @app.route('/results_new', methods=['GET'])
 def get_results_new():

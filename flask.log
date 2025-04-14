@@ -1,23 +1,86 @@
  * Serving Flask app 'inse6110_voting_system'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5001
 Press CTRL+C to quit
- * Restarting with stat
-Traceback (most recent call last):
-  File "C:\Users\osama\Downloads\INSE6110-main\src\inse6110_voting_system.py", line 31, in <module>
-    public_key, private_key = paillier.generate_paillier_keypair()
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\osama\AppData\Roaming\Python\Python312\site-packages\phe\paillier.py", line 58, in generate_paillier_keypair
-    q = getprimeover(n_length // 2)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\osama\AppData\Roaming\Python\Python312\site-packages\phe\util.py", line 122, in getprimeover
-    while not is_prime(n):
-              ^^^^^^^^^^^
-  File "C:\Users\osama\AppData\Roaming\Python\Python312\site-packages\phe\util.py", line 443, in is_prime
-    return miller_rabin(n, mr_rounds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\osama\AppData\Roaming\Python\Python312\site-packages\phe\util.py", line 408, in miller_rabin
-    x = pow(a, d, n)
-        ^^^^^^^^^^^^
-KeyboardInterrupt
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\difflib.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Scripts\\conda-script.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\Desktop\\INSE6110\\src\\inse6110_voting_system.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Scripts\\conda-script.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\platformdirs\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\hashlib.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\urllib3\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\ssl.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\hmac.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\charset_normalizer\\__init__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\asttokens\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\comm\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\jupyter_client\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\parso\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\prompt_toolkit\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\AppData\\Roaming\\Python\\Python312\\site-packages\\traitlets\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\aiohappyeyeballs\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\aioitertools\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\altair\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\argon2\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\async_lru\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\automat\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\bokeh\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\comm\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\contourpy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\debugpy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\fastjsonschema\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\filelock\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\fsspec\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\jsonschema_specifications\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\jupyter_client\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\jupyter_events\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\lmdb\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\matplotlib_venn\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\param\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\pkg_resources\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\platformdirs\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\plotly\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\pyogrio\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\pyparsing\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\pytest\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\pywt\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\rich\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\scrapy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\soupsieve\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\tldextract\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\tomlkit\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\torch\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\xlwings\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\yarl\\__init__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\flask\\views.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\site-packages\\flask\\__main__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\Desktop\\INSE6110\\src\\inse6110_voting_system.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Scripts\\conda-script.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\hashlib.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\datetime.py', reloading
+ * Detected change in 'C:\\Users\\umroot\\anaconda3\\Lib\\_pydatetime.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 717-050-043

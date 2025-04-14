@@ -1,12 +1,12 @@
 # SecVote – Secure E-Voting System
 
-A cryptographically secure electronic voting system prototype built using Python, Flask, and SQLite. The system ensures confidentiality, integrity, authenticity, and privacy using industry-standard algorithms like AES-256, RSA, Paillier homomorphic encryption, HMAC-SHA256, and JWT.
+A cryptographically secure electronic voting system prototype built using Python, Flask, and SQLite. The system ensures confidentiality, integrity, authenticity, and privacy using industry-standard algorithms like AES-256, RSA, HMAC-SHA256, and JWT.
 
 ---
 
 ## Features
 
-- **Confidential Voting**: Votes are encrypted using Paillier and AES-256.
+- **Confidential Voting**: Votes are encrypted using AES-256.
 - **Double Voting Prevention**: Decryption-based validation checks if a voter has already voted.
 - **Digital Signatures**: Each vote is digitally signed using RSA.
 - **Integrity Protection**: Every vote is protected by an HMAC.
@@ -19,13 +19,13 @@ A cryptographically secure electronic voting system prototype built using Python
 
 ## Cryptographic Design
 
-| Purpose              | Algorithm                          |
-|----------------------|------------------------------------|
-| Vote Confidentiality | Paillier (Homomorphic) + AES-256   |
-| Vote Authenticity    | RSA Digital Signatures             |
-| Data Integrity       | HMAC-SHA256                        |
-| Session Authentication | JWT (HS256)                      |
-| Secure Storage       | Fernet (AES symmetric)             |
+| Purpose                | Algorithm                          |
+|------------------------|------------------------------------|
+| Vote Confidentiality   | AES-256                            |
+| Vote Authenticity      | RSA Digital Signatures             |
+| Data Integrity         | HMAC-SHA256                        |
+| Session Authentication | JWT (HS256)                        |
+| Secure Storage         | Fernet (AES symmetric)             |
 
 ---
 
