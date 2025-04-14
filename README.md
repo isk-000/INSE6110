@@ -38,6 +38,8 @@ A cryptographically secure electronic voting system prototype built using Python
   pip install -r requirements.txt
   ```
 
+### Note: In case running on localhost:5000 is unauthorized, then you may need to kill any processes listening on that port or use another one for all endpoints (e.g., 5001).
+
 ### Project Structure
 ```
 secure-voting-system/
@@ -86,9 +88,13 @@ Run test scripts from the `tests/` directory to validate:
 
 ---
 
+### Future Work
+The project can be extended to use Holomorphic encryption algorithms like Paillier Cryptosystem in order to ensure anonymity of the voters 
+throughout the tallying process, in case the voting options were more diverse. However, since this prototype uses simple counters for voting as a POC, the algorithm need not be utilized at the moment.
+
 ## Author
 
 **Osama Iskandarani**  
-Course Name: INSE 6110: Foundations of Cryptography
-Instructor: Dr. Ayda Basyouni
+Course Name: INSE 6110: Foundations of Cryptography <br />
+Instructor: Dr. Ayda Basyouni <br />
 Concordia University, Canada – April 2025
